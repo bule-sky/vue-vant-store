@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "api": "npm run preinstall && npm run start",
+    "all": "concurrently \"npm run start\" \"npm run serve\"",
     "preinstall": "node ./bin/preinstall.js",
     "start": "node ./server/bin/www",
     "serve": "vue-cli-service serve",
@@ -26,6 +26,7 @@
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-prettier": "^3.0.1",
+    "concurrently": "^6.4.0",
     "prettier": "^1.14.2",
     "vue-template-compiler": "^2.5.17"
   }
