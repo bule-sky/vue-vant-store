@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "api": "npm run preinstall && npm run start",
+    "preinstall": "node ./bin/preinstall.js",
+    "start": "node ./server/bin/www",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
